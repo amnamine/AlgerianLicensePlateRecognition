@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algerian License Plate Detection & Recognition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="flag-colors">
+                <div class="flag-green"></div>
+                <div class="flag-white"></div>
+                <div class="flag-red"></div>
+            </div>
+            <h1 class="title">🇩🇿 Algerian License Plate Detection & Recognition</h1>
+            <p class="subtitle">Advanced AI-Powered License Plate Recognition System</p>
+        </header>
+
+        <main class="main-content">
+            <div class="control-panel">
+                <div class="input-section">
+                    <label for="imageSelect" class="label">Select Input Image:</label>
+                    <select id="imageSelect" class="image-select">
+                        <option value="">-- Choose an image --</option>
+                    </select>
+                </div>
+                <div class="button-group">
+                    <button id="predictBtn" class="predict-btn" disabled>
+                        <span class="btn-text">🔍 Predict License Plate</span>
+                        <span class="btn-loader"></span>
+                    </button>
+                    <button id="clearBtn" class="clear-btn">
+                        <span class="btn-text">🗑️ Clear</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="results-container">
+                <div class="image-box input-box">
+                    <h2 class="box-title">Input Image</h2>
+                    <div class="image-wrapper">
+                        <img id="inputImage" src="" alt="Input Image" class="preview-image">
+                        <div class="placeholder" id="inputPlaceholder">
+                            <span>📷</span>
+                            <p>Select an image to preview</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrow-container">
+                    <div class="arrow">→</div>
+                </div>
+
+                <div class="image-box output-box">
+                    <h2 class="box-title">Detected & Recognized</h2>
+                    <div class="image-wrapper">
+                        <img id="outputImage" src="" alt="Output Image" class="preview-image">
+                        <div class="placeholder" id="outputPlaceholder">
+                            <span>🎯</span>
+                            <p>Result will appear here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Algerian License Plate Recognition System © 2024</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
